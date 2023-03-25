@@ -1,91 +1,95 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+"use client";
 
-const inter = Inter({ subsets: ['latin'] })
+import { useRouter } from "next/navigation";
+import TypeIt from "typeit-react";
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+export default function HomePage() {
+    const router = useRouter();
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
+    const handleKeypress = (e) => {
+        if(e.keyCode === 13) {
+            const commandEl = document.getElementById("command");
+            const command = document.getElementById("command").value;
+            const response = document.getElementById("response");
+            if(command === "activity") {
+                response.innerHTML = `Redirecting you to <span class="aqua">/activity</span>...`;
+                router.push("/activity");
+            }
+            else if(command === "projects") {
+                response.innerHTML = `Redirecting you to <span class="aqua">/projects</span>...`;
+                router.push("/projects");
+            }
+            else if(command === "socials") {
+                response.innerHTML = `Redirecting you to <span class="aqua">/socials</span>...`;
+                router.push("/socials");
+            }
+            else if(command === "timeline") {
+                response.innerHTML = `Redirecting you to <span class="aqua">/timeline</span>...`;
+                router.push("/timeline");
+            }
+            else {
+                response.innerHTML = `<span class="red">snehasishkun: command '${command}' not found.</span>`;
+                commandEl.value = null;
+            }
+        }
+    }
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    return (
+        <>
+            <div className="center">
+                <div className="hero">
+                    <div className="horizontal">
+                        <a href="/activity" className="link">activity</a>
+                        <a href="/projects" className="link">projects</a>
+                        <a href="/socials" className="link">socials</a>
+                        <a href="/timeline" className="link">timeline</a>
+                    </div>
+                    <h2 className="title">snehasishkun</h2>
+                    <div className="subtitle">
+                        <TypeIt
+                            getBeforeInit={(instance) => {
+                                instance.type(
+                                    "a full stack web developer 🍆"
+                                )
+                                    .pause(750)
+                                    .delete(2)
+                                    .pause(250)
+                                    .type(".");
+                                return instance;
+                            }}
+                        />
+                        &nbsp;
+                    </div>
+                    <div className="divider"></div>
+                    <p className="description">
+                        <span className="green">16 year old, 11th grade student, from india.</span>
+                    </p>
+                    <p className="description">
+                        <span className="purple">hopeless weeb. sucks at gaming. epic music taste. </span>
+                    </p>
+                    <p className="description">
+                        <span className="blue">currently learning: <a href="//brain.js.org" target="_blank" className="link">brain.js</a>,<a href="//reactnative.dev" target="_blank" className="link">react native</a>and<a href="//python.org" target="_blank" className="link">python</a>.</span>
+                    </p>
+                    <p className="description">
+                        <span className="red">i usually watch animes, listen to music, or make stuff using code in my free time.</span>
+                    </p>
+                    <p className="description">
+                        <span className="aqua">you can text me anytime on any of my <a href="/socials" className="link">socials</a>:D</span>
+                    </p>
+                    <div className="divider"></div>
+                    <div className="terminal">
+                        <h4 className="title">snehasishkun:$ where do you wish to go?</h4>
+                        <p className="option">{">>"} activity, projects, socials, timeline</p>
+                        <div className="horizontal">
+                            <p className="label"><span className="blue">~/home</span><span className="color">$</span></p>
+                            <input type="text" id="command" className="input" onKeyDown={handleKeypress} />
+                        </div>
+                        <div className="horizontal">
+                            <p className="response" id="response"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
 }
