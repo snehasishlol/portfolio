@@ -61,11 +61,11 @@ export default function ActivityPage() {
                 <div className="divider"></div>
                 <h4 className="subtitle">coding</h4>
                 <p className="subtitle">time</p>
-                <div className="image-container centered">
+                <div className="centered">
                     <Image src="https://wakatime.com/share/@22430477-f60f-4af5-bb01-103c4714180a/7934fb80-c76b-4bae-ad6f-a0f5a5684665.svg" />
                 </div>
                 <p className="subtitle">languages</p>
-                <div className="image-container centered">
+                <div className="centered">
                     <Image src="https://wakatime.com/share/@22430477-f60f-4af5-bb01-103c4714180a/befd2e27-65e7-464c-95c8-bb3216cb72ec.svg" />
                 </div>
                 <div className="divide"></div>
