@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -61,21 +62,21 @@ export default function ActivityPage() {
                 <h4 className="subtitle">coding</h4>
                 <p className="subtitle">time</p>
                 <div className="image-container centered">
-                    <image className="image" src="https://wakatime.com/share/@22430477-f60f-4af5-bb01-103c4714180a/7934fb80-c76b-4bae-ad6f-a0f5a5684665.svg" />
+                    <Image className="image" src="https://wakatime.com/share/@22430477-f60f-4af5-bb01-103c4714180a/7934fb80-c76b-4bae-ad6f-a0f5a5684665.svg" />
                 </div>
                 <p className="subtitle">languages</p>
                 <div className="image-container centered">
-                    <image className="image" src="https://wakatime.com/share/@22430477-f60f-4af5-bb01-103c4714180a/befd2e27-65e7-464c-95c8-bb3216cb72ec.svg" />
+                    <Image className="image" src="https://wakatime.com/share/@22430477-f60f-4af5-bb01-103c4714180a/befd2e27-65e7-464c-95c8-bb3216cb72ec.svg" />
                 </div>
                 <div className="divide"></div>
                 <h4 className="subtitle">spotify</h4>
                 <div className="image-container centered">
-                    <image className="image" src="https://spotify-github-profile.vercel.app/api/view?uid=31momuam5cf3a6gdw6r47sdcs55q&cover_image=true&theme=default&show_offline=false&background_color=1b212c&interchange=true&bar_color_cover=true" />
+                    <Image className="image" src="https://spotify-github-profile.vercel.app/api/view?uid=31momuam5cf3a6gdw6r47sdcs55q&cover_image=true&theme=default&show_offline=false&background_color=1b212c&interchange=true&bar_color_cover=true" />
                 </div>
                 <div className="divide"></div>
                 <h4 className="subtitle">discord</h4>
                 <div className="image-container centered">
-                    <image className="image" src="https://lanyard.cnrad.dev/api/741292272661954651" />
+                    <Image className="image" src="https://lanyard.cnrad.dev/api/741292272661954651" />
                 </div>
                 <div className="divider"></div>
                 <div className="terminal">
