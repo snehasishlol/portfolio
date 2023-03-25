@@ -15,10 +15,10 @@ export default function ActivityPage() {
 
             if (!command) return response.innerHTML = `<span class="red">snehasishkun: command not found.</span>`;
 
-            if (command === "activity") {
-                response.innerHTML = `Redirecting you to <span class="aqua">/activity</span>...
+            if (command === "home") {
+                response.innerHTML = `Redirecting you to <span class="aqua">/</span>...
                 `;
-                router.push("/activity");
+                router.push("/");
             }
             else if (command === "knowledge") {
                 response.innerHTML = `Redirecting you to <span class="aqua">/projects</span>...`;
@@ -61,11 +61,11 @@ export default function ActivityPage() {
                 <h4 className="subtitle">coding</h4>
                 <p className="subtitle">time</p>
                 <div className="image-container centered">
-                    <img className="image" src="https://wakatime.com/share/@22430477-f60f-4af5-bb01-103c4714180a/7934fb80-c76b-4bae-ad6f-a0f5a5684665.svg" />
+                    <img src="https://wakatime.com/share/@22430477-f60f-4af5-bb01-103c4714180a/7934fb80-c76b-4bae-ad6f-a0f5a5684665.svg" />
                 </div>
                 <p className="subtitle">languages</p>
                 <div className="image-container centered">
-                    <img className="image" src="https://wakatime.com/share/@22430477-f60f-4af5-bb01-103c4714180a/befd2e27-65e7-464c-95c8-bb3216cb72ec.svg" />
+                    <img src="https://wakatime.com/share/@22430477-f60f-4af5-bb01-103c4714180a/befd2e27-65e7-464c-95c8-bb3216cb72ec.svg" />
                 </div>
                 <div className="divide"></div>
                 <h4 className="subtitle">spotify</h4>
@@ -80,9 +80,9 @@ export default function ActivityPage() {
                 <div className="divider"></div>
                 <div className="terminal">
                     <h4 className="terminal-title">snehasishkun:$ where do you wish to go?</h4>
-                    <p className="option">{">>"} activity / knowledge / projects / socials / timeline</p>
+                    <p className="option">{">>"} home / knowledge / projects / socials / timeline</p>
                     <div className="horizontal">
-                        <p className="label"><span className="blue">~/home</span><span className="color">$</span></p>
+                        <p className="label"><span className="blue">~/activity</span><span className="color">$</span></p>
                         <input type="text" id="command" className="input" autoComplete="off" autoFocus={true} onKeyDown={handleKeypress} placeholder={"....."} />
                     </div>
                     <div className="horizontal">
