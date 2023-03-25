@@ -46,7 +46,7 @@ export default function HomePage() {
         <>
             <div className="center">
                 <div className="hero">
-                    <div className="horizontal navbar">
+                    <div id="navbar" className="horizontal">
                         <a href="/activity" className="link">activity</a>
                         <a href="/knowledge" className="link">knowledge</a>
                         <a href="/projects" className="link">projects</a>

@@ -65,6 +65,7 @@ body {
     display: flex;
     flex-direction: row;
     margin: 3% 0;
+    overflow-x: scroll;
 }
 
 /* Assigning colors */
@@ -153,9 +154,6 @@ body {
 @media only screen and (max-width: 800px) {
     .center {
         padding: 3% 10%;
-    }
-    .navbar {
-        font-size: 14px;
     }
     .divider {
         margin: 3% 0;
