@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import TypeIt from "typeit-react";
 
@@ -7,31 +8,31 @@ export default function HomePage() {
     const router = useRouter();
 
     const handleKeypress = (e) => {
-        if(e.keyCode === 13) {
+        if (e.keyCode === 13) {
             const commandEl = document.getElementById("command");
             const command = document.getElementById("command").value;
             const response = document.getElementById("response");
 
-            if(!command) return response.innerHTML = `<span class="red">snehasishkun: command not found.</span>`;
-            
-            if(command === "activity") {
+            if (!command) return response.innerHTML = `<span class="red">snehasishkun: command not found.</span>`;
+
+            if (command === "activity") {
                 response.innerHTML = `Redirecting you to <span class="aqua">/activity</span>...
                 `;
                 router.push("/activity");
             }
-            else if(command === "knowledge") {
+            else if (command === "knowledge") {
                 response.innerHTML = `Redirecting you to <span class="aqua">/projects</span>...`;
                 router.push("/projects");
             }
-            else if(command === "projects") {
+            else if (command === "projects") {
                 response.innerHTML = `Redirecting you to <span class="aqua">/projects</span>...`;
                 router.push("/projects");
             }
-            else if(command === "socials") {
+            else if (command === "socials") {
                 response.innerHTML = `Redirecting you to <span class="aqua">/socials</span>...`;
                 router.push("/socials");
             }
-            else if(command === "timeline") {
+            else if (command === "timeline") {
                 response.innerHTML = `Redirecting you to <span class="aqua">/timeline</span>...`;
                 router.push("/timeline");
             }
@@ -47,11 +48,11 @@ export default function HomePage() {
             <div className="center">
                 <div className="hero">
                     <div id="navbar" className="horizontal">
-                        <a href="/activity" className="link">activity</a>
-                        <a href="/knowledge" className="link">knowledge</a>
-                        <a href="/projects" className="link">projects</a>
-                        <a href="/socials" className="link">socials</a>
-                        <a href="/timeline" className="link">timeline</a>
+                        <Link href="/activity" className="link">activity</Link>
+                        <Link href="/knowledge" className="link">knowledge</Link>
+                        <Link href="/projects" className="link">projects</Link>
+                        <Link href="/socials" className="link">socials</Link>
+                        <Link href="/timeline" className="link">timeline</Link>
                     </div>
                     <h2 className="title">snehasishkun</h2>
                     <div className="subtitle">
@@ -77,13 +78,13 @@ export default function HomePage() {
                         <span className="purple">hopeless weeb. sucks at gaming. epic music taste. </span>
                     </p>
                     <p className="description">
-                        <span className="blue">currently learning: <a href="//brain.js.org" target="_blank" className="link">brain.js</a>,<a href="//reactnative.dev" target="_blank" className="link">react native</a>and<a href="//python.org" target="_blank" className="link">python</a>.</span>
+                        <span className="blue">currently learning: <Link href="//brain.js.org" target="_blank" className="link">brain.js</Link>,<Link href="//reactnative.dev" target="_blank" className="link">react native</Link>and<Link href="//python.org" target="_blank" className="link">python</Link>.</span>
                     </p>
                     <p className="description">
                         <span className="red">i usually watch animes, listen to music, or make stuff using code in my free time.</span>
                     </p>
                     <p className="description">
-                        <span className="aqua">you can text me anytime on any of my <a href="/socials" className="link">socials</a>:D</span>
+                        <span className="aqua">you can text me anytime on any of my <Link href="/socials" className="link">socials</Link>:D</span>
                     </p>
                     <div className="divider"></div>
                     <div className="terminal">

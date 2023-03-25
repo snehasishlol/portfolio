@@ -45,6 +45,16 @@ body {
     padding: 5% 30%;
 }
 
+.centered {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
 .divider {
     border-top: 1px solid var(--divider);
     margin: 5% 0;
@@ -147,6 +157,19 @@ body {
 .hero .terminal .response {
     color: var(--purple);
     font-family: var(--scp);
+}
+
+/* Image */
+
+.image-container {
+    overflow: scroll;
+    margin: 3% 0;
+}
+
+.image {
+    aspect-ratio: 400 / 400;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 /* Media queries */

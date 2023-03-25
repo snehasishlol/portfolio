@@ -1,15 +1,15 @@
 import './globals.css'
 
 const details = {
-    title: 'snehasishkun - home',
-    description: 'the home page of snehasishkun.',
+    title: 'snehasishkun - activity',
+    description: 'snehasish\'s coding, spotify, discord and other activities.',
     image: '/icon.png',
     image_height: 400,
     image_width: 400,
     icon: '/icon.ico',
     theme: '#1066f4',
     site_name: 'snehasishkun',
-    url: 'https://snehasish.cf',
+    url: 'https://snehasish.cf/activity',
     locale: 'en-IN',
     type: 'website',
     twitter_card: 'summary',
@@ -58,10 +58,10 @@ export const metadata = {
     }
 };
 
-export default function RootLayout({ children }) {
+export default function ActivityLayout({ children }) {
     return (
-        <html lang="en">
-            <body>{children}</body>
-        </html>
+        <>
+            {children}
+        </>
     )
 }
