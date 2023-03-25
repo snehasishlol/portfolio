@@ -61,7 +61,7 @@ export const metadata = {
 export default function ActivityLayout({ children }) {
     return (
         <>
-            {children}
+            <body>{children}</body>
         </>
     )
 }
