@@ -55,7 +55,7 @@ export default function ActivityPage() {
                         <Link href="/timeline" className="link">timeline</Link>
                     </div>
                     <h2 className="title">activity</h2>
-                    <p className="subtitle">snehasish{"'"}s recent coding, spotify, discord and other activities.</p>
+                    <p className="subtitle">coding, spotify and discord activity and statistics.</p>
                 </div>
                 <div className="divider"></div>
                 <h4 className="subtitle">coding</h4>
