@@ -1,15 +1,15 @@
 import '../globals.css';
 
 const details = {
-    title: 'snehasishkun - knowledge',
-    description: 'snehasish\'s education, knowledge and experience.',
+    title: 'snehasishkun - timeline',
+    description: 'achievements, contributions and milestones of snehasish in a timeline.',
     image: '/icon.png',
     image_height: 400,
     image_width: 400,
     icon: '/icon.ico',
     theme: '#1066f4',
     site_name: 'snehasishkun',
-    url: 'https://snehasish.cf/knowledge',
+    url: 'https://snehasish.cf/timeline',
     locale: 'en-IN',
     type: 'website',
     twitter_card: 'summary',
@@ -58,7 +58,7 @@ export const metadata = {
     }
 };
 
-export default function KnowledgeLayout({ children }) {
+export default function TimelineLayout({ children }) {
     return (
         <>
             <body>{children}</body>
