@@ -6,6 +6,7 @@ const details = {
     image: '/icon.png',
     image_height: 400,
     image_width: 400,
+    icon: '/icon.ico',
     theme: '#1066f4',
     site_name: 'snehasishkun',
     url: 'https://snehasish.cf',
@@ -51,8 +52,8 @@ export const metadata = {
     },
 
     icons: {
-        icon: details.image,
-        shortcut: details.image,
+        icon: details.icon,
+        shortcut: details.icon,
         apple: details.image
     }
 };
