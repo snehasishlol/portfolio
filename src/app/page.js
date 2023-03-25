@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import TypeIt from "typeit-react";
 
 export default function HomePage() {
+    
     const router = useRouter();
 
     const handleKeypress = (e) => {
