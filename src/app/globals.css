@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Kanit&family=Nunito&family=Raleway&family=Source+Code+Pro&display=swap');
 
+/* Defining colors and fonts */
+
 :root {
     /* Colors */
     --background: #1a1a27;
@@ -19,6 +21,8 @@
     --fira: 'Fira Code', monospace;
 }
 
+/* Global styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +38,8 @@ body {
     background-color: var(--background);
     color: var(--color);
 }
+
+/* Some elements */
 
 .center {
     padding: 5% 30%;
@@ -61,6 +67,8 @@ body {
     margin: 3% 0;
 }
 
+/* Assigning colors */
+
 .green {
     color: var(--green);
 }
@@ -85,6 +93,8 @@ body {
     color: var(--color);
 }
 
+/* Styling TITLE and DESCRIPTION section */
+
 .hero .title {
     color: var(--blue);
     font-size: 40px;
@@ -100,6 +110,8 @@ body {
     font-family: var(--scp);
     padding: 1% 0;
 }
+
+/* Styling the terminal */
 
 .hero .terminal {
     font-family: var(--fira);
@@ -135,3 +147,12 @@ body {
     color: var(--purple);
     font-family: var(--scp);
 }
+
+/* Media queries */
+
+@media only screen and (max-width: 800px) {
+    .center {
+        padding: 3% 10%;
+    }
+}
+
