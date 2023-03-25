@@ -89,7 +89,7 @@ export default function HomePage() {
                     </p>
                     <div className="divider"></div>
                     <div className="terminal">
-                        <h4 className="title">snehasishkun:$ where do you wish to go?</h4>
+                        <h4 className="terminal-title">snehasishkun:$ where do you wish to go?</h4>
                         <p className="option">{">>"} activity / knowledge / projects / socials / timeline</p>
                         <div className="horizontal">
                             <p className="label"><span className="blue">~/home</span><span className="color">$</span></p>

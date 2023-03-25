@@ -106,39 +106,39 @@ body {
 
 /* Styling TITLE and DESCRIPTION section */
 
-.hero .title {
+.title {
     color: var(--blue);
     font-size: 40px;
     font-family: var(--fira);
 }
 
-.hero .subtitle {
+.subtitle {
     color: var(--color);
     font-family: var(--scp);
 }
 
-.hero .description {
+.description {
     font-family: var(--scp);
     padding: 1% 0;
 }
 
 /* Styling the terminal */
 
-.hero .terminal {
+.terminal {
     font-family: var(--fira);
 }
 
-.hero .terminal .title {
+.terminal-title {
     color: var(--purple);
     font-size: 20px;
 }
 
-.hero .terminal .label {
+.label {
     font-family: var(--fira);
     font-size: 16px;
 }
 
-.hero .terminal .input {
+.input {
     background-color: transparent;
     outline: none;
     border: none;
@@ -148,13 +148,13 @@ body {
     font-size: 16px;
 }
 
-.hero .terminal .option {
+.option {
     color: var(--aqua);
     font-family: var(--scp);
     padding: 1% 0;
 }
 
-.hero .terminal .response {
+.response {
     color: var(--purple);
     font-family: var(--scp);
 }
