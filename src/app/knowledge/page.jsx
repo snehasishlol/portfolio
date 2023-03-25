@@ -1,10 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-export default function ActivityPage() {
+export default function KnowledgePage() {
 
     const router = useRouter();
 
@@ -21,9 +20,9 @@ export default function ActivityPage() {
                 `;
                 router.push("/");
             }
-            else if (command === "knowledge") {
-                response.innerHTML = `Redirecting you to <span class="aqua">/knowledge</span>...`;
-                router.push("/knowledge");
+            else if (command === "activity") {
+                response.innerHTML = `Redirecting you to <span class="aqua">/activity</span>...`;
+                router.push("/activity");
             }
             else if (command === "projects") {
                 response.innerHTML = `Redirecting you to <span class="aqua">/projects</span>...`;
@@ -50,40 +49,27 @@ export default function ActivityPage() {
                 <div className="hero">
                     <div id="navbar" className="horizontal">
                         <Link href="/" className="link">home</Link>
-                        <Link href="/knowledge" className="link">knowledge</Link>
+                        <Link href="/activity" className="link">activity</Link>
                         <Link href="/projects" className="link">projects</Link>
                         <Link href="/socials" className="link">socials</Link>
                         <Link href="/timeline" className="link">timeline</Link>
                     </div>
-                    <h2 className="title">activity</h2>
-                    <p className="subtitle">coding, spotify and discord activity and statistics.</p>
+                    <h2 className="title">knowledge</h2>
+                    <p className="subtitle">learning <a href="//brain.js.org" className="link">brain.js</a>,<a href="//reactnative.dev" className="link">react native</a>and<a href="//python.org" className="link">python</a>.</p>
                 </div>
                 <div className="divider"></div>
-                <h4 className="subtitle">coding</h4>
-                <p className="subtitle">time</p>
-                <div className="centered">
-                    <Image src="https://wakatime.com/share/@22430477-f60f-4af5-bb01-103c4714180a/7934fb80-c76b-4bae-ad6f-a0f5a5684665.svg" />
-                </div>
-                <p className="subtitle">languages</p>
-                <div className="centered">
-                    <Image src="https://wakatime.com/share/@22430477-f60f-4af5-bb01-103c4714180a/befd2e27-65e7-464c-95c8-bb3216cb72ec.svg" />
-                </div>
-                <div className="divide"></div>
-                <h4 className="subtitle">spotify</h4>
-                <div className="image-container centered">
-                    <img className="image" src="https://spotify-github-profile.vercel.app/api/view?uid=31momuam5cf3a6gdw6r47sdcs55q&cover_image=true&theme=default&show_offline=false&background_color=1b212c&interchange=true&bar_color_cover=true" />
-                </div>
-                <div className="divide"></div>
-                <h4 className="subtitle">discord</h4>
-                <div className="image-container centered">
-                    <img className="image" src="https://lanyard.cnrad.dev/api/741292272661954651" />
-                </div>
+                <p className="description">
+                    i am experienced in - <span className="green"><a href="//nodejs.org" className="link">node.js</a> <a href="//expressjs.com" className="link">express.js</a> <a href="//reactjs.org" className="link">react.js</a> <a href="//nextjs.org" className="link">next.js</a> <a href="//electronjs.org" className="link">electron.js</a> <a href="//mongodb.com" className="link">mongo db</a> <a href="//chakra-ui.com" className="link">chakra-ui</a></span>.
+                </p>
+                <p className="description">
+                    i am currently in 11th grade, studying at <a href="#" className="link">school</a>, pursuing - <span className="green">physics, mathematics, chemistry and biology.</span>
+                </p>
                 <div className="divider"></div>
                 <div className="terminal">
                     <h4 className="terminal-title">snehasishkun:$ where do you wish to go?</h4>
-                    <p className="option">{">>"} home / knowledge / projects / socials / timeline</p>
+                    <p className="option">{">>"} home / activity / projects / socials / timeline</p>
                     <div className="horizontal">
-                        <p className="label"><span className="blue">~/activity</span><span className="color">$</span></p>
+                        <p className="label"><span className="blue">~/knowledge</span><span className="color">$</span></p>
                         <input type="text" id="command" className="input" autoComplete="off" autoFocus={true} onKeyDown={handleKeypress} placeholder={"....."} />
                     </div>
                     <div className="horizontal">

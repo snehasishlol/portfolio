@@ -22,8 +22,8 @@ export default function HomePage() {
                 router.push("/activity");
             }
             else if (command === "knowledge") {
-                response.innerHTML = `Redirecting you to <span class="aqua">/projects</span>...`;
-                router.push("/projects");
+                response.innerHTML = `Redirecting you to <span class="aqua">/knowledge</span>...`;
+                router.push("/knowledge");
             }
             else if (command === "projects") {
                 response.innerHTML = `Redirecting you to <span class="aqua">/projects</span>...`;
@@ -82,7 +82,7 @@ export default function HomePage() {
                         <span className="blue">currently learning: <Link href="//brain.js.org" target="_blank" className="link">brain.js</Link>,<Link href="//reactnative.dev" target="_blank" className="link">react native</Link>and<Link href="//python.org" target="_blank" className="link">python</Link>.</span>
                     </p>
                     <p className="description">
-                        <span className="red">i usually watch animes, listen to music, or make stuff using code in my free time.</span>
+                        <span className="red">i usually watch animes, listen to music, read books and novels or make stuff using code in my free time.</span>
                     </p>
                     <p className="description">
                         <span className="aqua">you can text me anytime on any of my <Link href="/socials" className="link">socials</Link>:D</span>
