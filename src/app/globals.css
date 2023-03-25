@@ -47,7 +47,7 @@ body {
 
 .divider {
     border-top: 1px solid var(--divider);
-    margin: 3% 0;
+    margin: 5% 0;
 }
 
 .link {
@@ -153,6 +153,12 @@ body {
 @media only screen and (max-width: 800px) {
     .center {
         padding: 3% 10%;
+    }
+    .navbar {
+        font-size: 14px;
+    }
+    .divider {
+        margin: 3% 0;
     }
 }
 

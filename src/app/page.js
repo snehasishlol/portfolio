@@ -46,7 +46,7 @@ export default function HomePage() {
         <>
             <div className="center">
                 <div className="hero">
-                    <div className="horizontal">
+                    <div className="horizontal navbar">
                         <a href="/activity" className="link">activity</a>
                         <a href="/knowledge" className="link">knowledge</a>
                         <a href="/projects" className="link">projects</a>
@@ -88,14 +88,10 @@ export default function HomePage() {
                     <div className="divider"></div>
                     <div className="terminal">
                         <h4 className="title">snehasishkun:$ where do you wish to go?</h4>
-                        <p className="option">{">>"} activity - <span className="green">snehasish{"'"}s recent coding, spotify and discord activity.</span></p>
-                        <p className="option">{">>"} knowledge - <span className="green">snehasish{"'"}s knowledge in tech and other fields.</span></p>
-                        <p className="option">{">>"} projects - <span className="green">some projects to which snehasish has contributed.</span></p>
-                        <p className="option">{">>"} socials - <span className="green">a list of snehasish{"'"}s social media accounts.</span></p>
-                        <p className="option">{">>"} timeline - <span className="green">snehasish{"'"}s achievements and milestones in a timeline.</span></p>
+                        <p className="option">{">>"} activity / knowledge / projects / socials / timeline</p>
                         <div className="horizontal">
                             <p className="label"><span className="blue">~/home</span><span className="color">$</span></p>
-                            <input type="text" id="command" className="input" onKeyDown={handleKeypress} placeholder={"....."} />
+                            <input type="text" id="command" className="input" autoComplete="off" autoFocus={true} onKeyDown={handleKeypress} placeholder={"....."} />
                         </div>
                         <div className="horizontal">
                             <p className="response" id="response"></p>
