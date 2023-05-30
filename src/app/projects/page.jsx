@@ -59,10 +59,10 @@ export default function ProjectsPage() {
                 </div>
                 <div className="divider"></div>
                 <p className="description">
-                    <span className="blue">::</span> <a href="//xtfz.tech" target="_blank" className="link">xtfz</a> - <span className="green">a development community aimed at contributing to build useful platforms for people.</span>
+                    <span className="blue">::</span> <a href="//igma.vercel.app" target="_blank" className="link">igma</a> - <span className="green">a prompt based image generator using open-ai api key.</span>
                 </p>
                 <p className="description">
-                    <span className="blue">::</span> <a href="//igma.vercel.app" target="_blank" className="link">igma</a> - <span className="green">a prompt based image generator using open-ai api key.</span>
+                    <span className="blue">::</span> <a href="//mytimer-alpha.vercel.app" target="_blank" className="link">mytimer</a> - <span className="green">a simple timer and stopwatch with synced ticking.</span>
                 </p>
                 <div className="divider"></div>
                 <div className="terminal">

@@ -59,25 +59,25 @@ export default function SocialsPage() {
                 </div>
                 <div className="divider"></div>
                 <p className="description">
-                    <span className="blue">::</span> <a href="//github.com/snehasishkun" target="_blank" className="link">github</a>
+                    <span className="blue">::</span> <a href="//github.com/snehasishlol" target="_blank" className="link">github</a>
                 </p>
                 <p className="description">
-                    <span className="blue">::</span> <a href="//twitter.com/snehasishkun" target="_blank" className="link">twitter</a>
+                    <span className="blue">::</span> <a href="//twitter.com/snehasishlol" target="_blank" className="link">twitter</a>
                 </p>
                 <p className="description">
-                    <span className="blue">::</span> <a href="//youtube.com/@snehasishkun" target="_blank" className="link">youtube</a>
+                    <span className="blue">::</span> <a href="//youtube.com/@snehasishlol" target="_blank" className="link">youtube</a>
                 </p>
                 <p className="description">
                     <span className="blue">::</span> <a href="//open.spotify.com/user/31momuam5cf3a6gdw6r47sdcs55q" target="_blank" className="link">spotify</a>
                 </p>
                 <p className="description">
-                    <span className="blue">::</span> <a href="//instagram.com/snehasishkun" target="_blank" className="link">instagram</a>
+                    <span className="blue">::</span> <a href="//instagram.com/snehasishlol" target="_blank" className="link">instagram</a>
                 </p>
                 <p className="description">
-                    <span className="blue">::</span> <a href="//pinterest.com/snehasishkun" target="_blank" className="link">pinterest</a>
+                    <span className="blue">::</span> <a href="//pinterest.com/snehasishlol" target="_blank" className="link">pinterest</a>
                 </p>
                 <p className="description">
-                    <span className="blue">::</span> <a href="//discord.com/invite/GdCjHfXDvs" target="_blank" className="link">discord</a>
+                    <span className="blue">::</span> <a href="//discord.gg/Mxczhv4p4M" target="_blank" className="link">discord</a>
                 </p>
                 <p className="description">
                     <span className="blue">::</span> <a href="//snehasishkun.tumblr.com" target="_blank" className="link">tumblr</a>
